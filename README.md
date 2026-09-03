@@ -44,29 +44,27 @@ Create and modify NSG inbound security rules to allow or deny specific traffic a
 
 <h2>Actions and Observations</h2>
 
-<p>
-Action 1: Created Virtual Machines
-</p>
+
+**Action 1: Created Virtual Machines**
+
 
 - A. Windows
-<p>
-<img width="883" height="598" alt="1 - windows vm" src="https://github.com/user-attachments/assets/f4626123-03be-4f8d-a23f-d0defec27803" />
+
+![Windows VM](screenshots/1-windows-vm.png)
 </p>
 
 - B. Linux
-<p>
-<img width="833" height="491" alt="2 - linux vm" src="https://github.com/user-attachments/assets/67457f1c-311a-44f9-b300-1985d35ede8c" />
+
+![Linux VM](screenshots/2-linux-vm.png)
 </p>
 <br />
 
-<p>
-Action 2: Installed Wireshark and captured ICMP Traffic 
-</p>
-<p>
-<img width="970" height="507" alt="3 - wireshark" src="https://github.com/user-attachments/assets/a583ef6c-e00a-4d78-b64e-05aefbf397cb" />
-</p>
-<p>
-<img width="1028" height="685" alt="4 - icmp" src="https://github.com/user-attachments/assets/53d4edac-4724-4195-ad2a-6079bd2e919b" />
+
+**Action 2: Installed Wireshark and captured ICMP Traffic**
+
+![Wireshark](screenshots/3-wireshark.png)
+
+![ICMP](screenshots/3-wireshark.png)
 </p>
 <br />
 
@@ -75,25 +73,25 @@ Observation
 - Wireshark displayed ICMP Echo Requests and Echo Replies.
 - This demonstrated successful communication between the two virtual machines and provided visibility into packet-level network activity.
 
-<p>
-Action 3: Configured a firewall (Network Security Group)
+
+
+**Action 3: Configured a firewall (Network Security Group)**
 
 - A. Initiated a perpetual / non stop ping from Windows VM
-</p>
-<p>
-<img width="888" height="720" alt="5 - perpetual ping" src="https://github.com/user-attachments/assets/d95ce468-2a9a-479d-96c8-8dbd49260a12" />
+
+![Perpetual Ping](screenshots/5-perpetual-ping.png)
 </p>
 
 - B. Disabled incoming (inbound) ICMP traffic 
-<p>
-<img width="1550" height="496" alt="6 - deny traffic" src="https://github.com/user-attachments/assets/88b96b90-e224-45aa-9e00-72ed3c1a2f36" />
+
+![Deny Traffic](screenshots/6-deny-traffic.png)
 </p>
 
 - C. Verifed the ICMP traffic stopped
   
-<img width="1045" height="744" alt="7 - traffic timed out" src="https://github.com/user-attachments/assets/91eca827-7584-4a5b-95c1-4d08021b8a36" />
+![Traffic Timed Out](screenshots/7-traffic-timed-out.png)
 </p>
-  </p>
+
 
 Observation
 - Before the NSG rule was applied, the Windows VM received successful ICMP Echo Replies from the Ubuntu VM, confirming network connectivity.
@@ -102,12 +100,13 @@ Observation
 - The test confirmed how firewall rules impact network communication and highlighted the importance of NSGs in controlling and securing Azure network traffic.
 <br />
 
-</p>
-Action 4: Examined SSH Traffic
-</p>
 
-<p>
-<img width="1114" height="919" alt="8 - ssh traffic" src="https://github.com/user-attachments/assets/2b97a8b6-1ac1-450c-a74d-b60178cb0e9d" />
+
+**Action 4: Examined SSH Traffic**
+
+
+
+![SSH Traffic](screenshots/8-ssh-traffic.png)
 </p>
 
 </p>
@@ -118,12 +117,13 @@ Observation
 </p>
 <br />
 
-</p>
-Action 5: Examined DHCP Traffic
-</p>
 
-<p>
-<img width="1064" height="865" alt="9 - dhcp" src="https://github.com/user-attachments/assets/8dd8c9a2-aa90-4fca-847b-bd5e661a6414" />
+
+**Action 5: Examined DHCP Traffic**
+
+
+
+![DHCP](screenshots/9-dhcp.png)
 </p>
 
 </p>
@@ -137,12 +137,11 @@ Observation
 </p>
 <br />
 
-</p>
-Action 6: Examined DNS Traffic
-</p>
 
-<p>
-<img width="1302" height="604" alt="10 - DNS traffic" src="https://github.com/user-attachments/assets/cd3ea50a-3a63-4c72-b0b2-4cb779c304ee" />
+
+**Action 6: Examined DNS Traffic**
+
+![DNS Traffic](screenshots/10-DNS-traffic.png)
 </p>
 
 </p>
@@ -153,12 +152,12 @@ Observation
 </p>
 <br />
 
-</p>
-Action 7: Examined RDP Traffic
-</p>
 
-<p>
-<img width="997" height="583" alt="11 - rdp" src="https://github.com/user-attachments/assets/1aea2c9f-68ac-48ca-99c1-eca75b835aa0" />
+
+**Action 7: Examined RDP Traffic**
+
+
+![RDP](screenshots/11-rdp.png)
 </p>
 
 </p>
